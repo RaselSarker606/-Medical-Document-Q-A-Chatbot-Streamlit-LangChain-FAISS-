@@ -1,7 +1,7 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 # 🔐 Hardcoded Google API Key (Not recommended for production)
-GOOGLE_API_KEY = "AIzaSyCitx6KRbk0O0iBWiEv1AOfhLrZJKKd2X4"
+GOOGLE_API_KEY = "Your API Key Here"
 
 # Returns a chat model using Gemini Pro with API key
 def get_google_chat_model():
@@ -17,3 +17,4 @@ def get_google_chat_model():
 def ask_chat_model(chat_model, prompt: str):
     response = chat_model.invoke(prompt)
     return response.content
+
